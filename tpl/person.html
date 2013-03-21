@@ -1,0 +1,16 @@
+<header class="bar-title">
+    <a class="button back" href="#">Back</a>
+    <h1 class="title">Profile</h1>
+    <a class="button" href="#menu">Menu</a>
+</header>
+<div class="content content-padded">
+{{#if .}}
+    <img src="https://graph.facebook.com/{{ id }}/picture?width=150&height=150" class="avatar" />
+    <h2>{{ name }}</h2>
+    <p>{{gender}}, {{locale}}, {{timezone}}</p>
+    <br/>
+    <a href="#person/{{ id }}/friends" class="button-block">Friends</a>
+    <a href="#person/{{ id }}/mutualfriends" class="button-block">Mutual Friends</a>
+    <a href="#person/{{ id }}/feed" class="button-block">Feed</a>
+{{/if}}
+</div>

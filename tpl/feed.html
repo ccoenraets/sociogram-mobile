@@ -1,0 +1,19 @@
+<header class="bar-title">
+    <a class="button back" href="#">Back</a>
+    <h1 class="title">Feed</h1>
+    <a class="button" href="#menu">Menu</a>
+</header>
+<div class="content">
+{{#if .}}
+<ul class="list">
+    {{#each .}}
+    <li>
+        {{#if from}}<strong>{{from.name}}</strong><br/>{{/if}}
+        {{#if message}}{{message}}<br/>{{/if}}
+        {{#if story}}{{story}}<br/>{{/if}}
+        {{#if create_time}}{{created_time}}<br/>{{/if}}
+    </li>
+    {{/each}}
+</ul>
+{{/if}}
+</div>

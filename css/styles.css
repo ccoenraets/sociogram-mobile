@@ -1,0 +1,50 @@
+* {
+    -webkit-user-select: none;
+}
+
+input, textarea {
+    -webkit-user-select: auto !important;
+}
+
+a {
+    -webkit-touch-callout: none;
+}
+
+.list li > a:active {
+    background-color: #D7D7D7;
+}
+
+.content {
+    background-color: #EAEAEA;
+}
+
+img.avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.fb {
+    /*font-size: 10px;*/
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+.fb > div {
+    margin-left: 70px;
+}
+
+.fb img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    display: inline-block;
+}
+
+.fb .name {
+    font-weight: bold;
+    color: #2f3677;
+}
+
+.fb .caption {
+    margin-bottom: 4px;
+}
